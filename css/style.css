@@ -1,0 +1,132 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+p {
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-size: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    z-index: 2;
+    text-align: center;
+    top: 45vh;
+
+
+    animation-name: star;
+	animation-duration: 5s;
+  	animation-timing-function: linear;
+  	animation-iteration-count: infinite;
+  	animation-delay: 0s;
+  	animation-fill-mode: forwards;
+}
+@keyframes star{
+    0%{ 
+		transform: scale(1); 
+	}
+	5%{ 
+		transform: scale(5); 
+	}
+	10%{
+		transform: scale(10); 
+	}
+    15%{
+		transform: scale(15); 
+	}
+    20%{
+		transform: scale(20); 
+	}
+    25%{
+		transform: scale(25); 
+	}
+    30%{
+		transform: scale(30); 
+	}
+    35%{
+		transform: scale(35); 
+	}
+    40%{
+		transform: scale(40); 
+	}
+    45%{
+		transform: scale(45); 
+	}
+    50%{
+		transform: scale(50); 
+	}
+    55%{
+		transform: scale(55); 
+	}
+    60%{
+		transform: scale(60); 
+	}
+    65%{
+		transform: scale(65); 
+	}
+    70%{
+		transform: scale(70); 
+	}
+    75%{
+		transform: scale(75); 
+	}
+    80%{
+		transform: scale(80); 
+	}
+    85%{
+		transform: scale(85); 
+	}
+    90%{
+		transform: scale(90); 
+	}
+    95%{
+		transform: scale(95); 
+	}
+    100%{
+		transform: scale(0);
+	}
+}
+
+
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+.stars, .twinkling {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  display:block;
+}
+
+.stars {
+  background:#000 url(../img/stars.png) repeat top center;
+  z-index: 0;
+}
+
+.twinkling{
+  background:transparent url(../img/twinkling.png) repeat top center;
+  z-index: 1;
+
+  -moz-animation:move-twink-back 200s linear infinite;
+  -ms-animation:move-twink-back 200s linear infinite;
+  -o-animation:move-twink-back 200s linear infinite;
+  -webkit-animation:move-twink-back 200s linear infinite;
+  animation:move-twink-back 200s linear infinite;
+}
